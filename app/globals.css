@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-neutral-950 text-neutral-100 antialiased;
+  }
+}
+
+@layer components {
+  .timer-safe {
+    @apply text-emerald-400;
+  }
+  .timer-warn {
+    @apply text-amber-400;
+  }
+  .timer-danger {
+    @apply text-red-400;
+  }
+}
+
+/* 时间线竖线 */
+.timeline-line {
+  @apply absolute left-[120px] top-0 bottom-0 w-px bg-neutral-700;
+}

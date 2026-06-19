@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Navigation from '@/components/Navigation';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -9,8 +10,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="zh-CN">
-      <body className="min-h-screen bg-neutral-950 text-neutral-100 antialiased">
-        {children}
+      <body className="min-h-screen">
+        <Navigation />
+        <main className="mx-auto max-w-5xl px-6 py-8">{children}</main>
       </body>
     </html>
   );
