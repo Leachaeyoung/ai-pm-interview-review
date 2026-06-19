@@ -29,7 +29,8 @@ export function getInterviews(): Interview[] {
 }
 
 export function getInterview(id: string): Interview | undefined {
-  return interviews.find((i) => i.id === id);
+  const interview = interviews.find((i) => i.id === id);
+  return interview ? { ...interview } : undefined;
 }
 
 export function addInterview(data: Omit<Interview, 'id' | 'createdAt'>): Interview {
@@ -70,20 +71,24 @@ export function updateProfile(data: Profile): Profile {
 }
 
 export function getInterviewsByCompany(company: string): Interview[] {
-  return getInterviews().filter((i) => i.company.includes(company));
+  return interviews
+    .filter((i) => i.company.includes(company))
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 
 export function searchInterviews(keyword: string): Interview[] {
   const kw = keyword.toLowerCase();
-  return getInterviews().filter(
-    (i) =>
-      i.company.toLowerCase().includes(kw) ||
-      i.position.toLowerCase().includes(kw) ||
-      i.questions.some(
-        (q) =>
-          q.question.toLowerCase().includes(kw) ||
-          q.answer.toLowerCase().includes(kw) ||
-          q.reflection.toLowerCase().includes(kw)
-      )
-  );
+  return interviews
+    .filter(
+      (i) =>
+        i.company.toLowerCase().includes(kw) ||
+        i.position.toLowerCase().includes(kw) ||
+        i.questions.some(
+          (q) =>
+            q.question.toLowerCase().includes(kw) ||
+            q.answer.toLowerCase().includes(kw) ||
+            q.reflection.toLowerCase().includes(kw)
+        )
+    )
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
