@@ -11,6 +11,10 @@ export default function VoiceInput({ onTextChange, text }: VoiceInputProps) {
   const [isRecording, setIsRecording] = useState(false);
   const [browserSupport, setBrowserSupport] = useState(true);
   const recognitionRef = useRef<any>(null);
+  const textRef = useRef(text);
+  textRef.current = text;
+  const onTextChangeRef = useRef(onTextChange);
+  onTextChangeRef.current = onTextChange;
 
   useEffect(() => {
     const SpeechRecognition =
@@ -37,7 +41,7 @@ export default function VoiceInput({ onTextChange, text }: VoiceInputProps) {
         }
       }
       if (final) {
-        onTextChange(text + final);
+        onTextChangeRef.current(textRef.current + final);
       }
     };
 
@@ -50,7 +54,7 @@ export default function VoiceInput({ onTextChange, text }: VoiceInputProps) {
     };
 
     recognitionRef.current = recognition;
-  }, [text, onTextChange]);
+  }, []);
 
   const toggleRecording = useCallback(() => {
     if (!recognitionRef.current) return;
