@@ -1,0 +1,35 @@
+{
+  "selfAssessment": [
+    { "dimension": "AI技术理解", "score": 6 },
+    { "dimension": "数据分析", "score": 5 },
+    { "dimension": "产品设计", "score": 7 },
+    { "dimension": "业务思维", "score": 6 },
+    { "dimension": "沟通表达", "score": 7 },
+    { "dimension": "项目管理", "score": 5 },
+    { "dimension": "行业洞察", "score": 6 },
+    { "dimension": "用户研究", "score": 5 }
+  ],
+  "weakPoints": [
+    "数据分析思维需要加强，缺少量化论证习惯",
+    "AI技术理解停留在概念层，需要深入理解模型原理",
+    "B端商业化分析框架不够清晰"
+  ],
+  "recommendations": "重点关注：1) 每次面试前准备该公司的业务数据和行业报告；2) 练习用STAR法则组织回答；3) 对AI技术问题建立知识卡片，逐步积累。",
+  "resources": [
+    {
+      "title": "机器学习实战",
+      "url": "https://example.com/ml-practice",
+      "type": "book"
+    },
+    {
+      "title": "产品沉思录",
+      "url": "https://example.com/product-thinking",
+      "type": "article"
+    },
+    {
+      "title": "AI产品经理必修课",
+      "url": "https://example.com/ai-pm-course",
+      "type": "course"
+    }
+  ]
+}
