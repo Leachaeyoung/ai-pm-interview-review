@@ -1,0 +1,211 @@
+[
+  {
+    "id": "705d10a1-bd48-4336-b11e-e411b13d3a3e",
+    "title": "GPT-5 原生多模态推理",
+    "summary": "OpenAI 发布 GPT-5，整合视觉、听觉与文本的原生推理能力，API 同步上线。",
+    "category": "大模型",
+    "source": "OpenAI Blog",
+    "pushedAt": "2026-07-02T11:36:50.412Z",
+    "isNew": true,
+    "actionableInsight": "立即申请内测，评估多模态输入在现有产品流程中的替换成本与新交互模型。",
+    "priority": "must-act"
+  },
+  {
+    "id": "71268f72-4a53-4b8c-a037-ed34415c5f0f",
+    "title": "Meta 开源 Llama 4",
+    "summary": "Meta 发布 400B 参数 Llama 4，性能对标 GPT-4.5，并公开模型权重与训练细节。",
+    "category": "大模型",
+    "source": "Meta AI",
+    "pushedAt": "2026-07-02T11:36:50.412Z",
+    "isNew": true,
+    "actionableInsight": "成本敏感场景可启动自托管验证，对比 API 调用的长期总拥有成本与延迟。",
+    "priority": "focus"
+  },
+  {
+    "id": "43060cc4-1697-4612-85a5-b6394f6f419d",
+    "title": "Apple 空间计算 Agent 界面",
+    "summary": "visionOS 3 推出突破性 AI 代理，深度融入空间计算，重构无屏幕交互范式。",
+    "category": "产品设计",
+    "source": "Apple Newsroom",
+    "pushedAt": "2026-07-02T11:36:50.412Z",
+    "isNew": true,
+    "actionableInsight": "前瞻性探索语音、手势与空间界面融合的原型，储备空间交互设计人才。",
+    "priority": "aware"
+  },
+  {
+    "id": "7dc00c83-9029-41e8-9af4-8de5b4f4ef66",
+    "title": "谷歌 Agent 交互协议",
+    "summary": "谷歌发布 Agent-To-Agent 通用交互标准草案，推动不同 AI Agent 间互操作。",
+    "category": "产品设计",
+    "source": "Google AI Blog",
+    "pushedAt": "2026-07-02T11:36:50.412Z",
+    "isNew": true,
+    "actionableInsight": "立即评估产品中多 Agent 场景，预留标准接口，避免后期集成壁垒。",
+    "priority": "must-act"
+  },
+  {
+    "id": "6d81e78a-43f9-4ab5-abc0-2d1adcfe5ec2",
+    "title": "微软 Copilot 200 亿营收",
+    "summary": "微软 Copilot 年营收突破 200 亿美元，推出基于商业成果的定价模式。",
+    "category": "商业化",
+    "source": "Microsoft Earnings Report",
+    "pushedAt": "2026-07-02T11:36:50.412Z",
+    "isNew": true,
+    "actionableInsight": "调研成果导向定价的可行性，设计可量化的客户成功指标和收费触点。",
+    "priority": "focus"
+  },
+  {
+    "id": "e51888ca-41be-419f-b42a-9348e09603ec",
+    "title": "Anthropic 企业 AI 责任险",
+    "summary": "Anthropic 推出 Claude 企业版‘成果保障’保险，转嫁 AI 决策风险。",
+    "category": "商业化",
+    "source": "Anthropic Blog",
+    "pushedAt": "2026-07-02T11:36:50.412Z",
+    "isNew": true,
+    "actionableInsight": "关注 AI 责任险条款，评估对自身产品法律风险矩阵和商业条款的影响。",
+    "priority": "aware"
+  },
+  {
+    "id": "9d40dc55-2c69-4c8b-995f-63c0f04c464e",
+    "title": "LangGraph Cloud 2.0",
+    "summary": "LangChain 发布 LangGraph Cloud 2.0，提供生产级多 Agent 编排与监控面板。",
+    "category": "开源工具",
+    "source": "LangChain Blog",
+    "pushedAt": "2026-07-02T11:36:50.412Z",
+    "isNew": true,
+    "actionableInsight": "测试其多 Agent 容错与状态持久化能力，若成熟可加速现有编排器迁移。",
+    "priority": "must-act"
+  },
+  {
+    "id": "ef88ec96-f1e1-40af-bf21-4a47e8ea6938",
+    "title": "Hugging Face 无代码微调",
+    "summary": "Hugging Face AutoTrain-Advanced 上线，零代码实现垂直领域大模型微调。",
+    "category": "开源工具",
+    "source": "Hugging Face Blog",
+    "pushedAt": "2026-07-02T11:36:50.412Z",
+    "isNew": true,
+    "actionableInsight": "让领域专家直接尝试微调，快速验证垂直场景模型，缩短实验闭环。",
+    "priority": "focus"
+  },
+  {
+    "id": "e5cc14ca-9149-4791-ab33-927fc12846e5",
+    "title": "欧盟 AI 法案实时审计",
+    "summary": "欧盟 AI 法案全面执行，要求高风险系统提供实时审计接口与决策溯源。",
+    "category": "行业政策",
+    "source": "EU Commission",
+    "pushedAt": "2026-07-02T11:36:50.412Z",
+    "isNew": true,
+    "actionableInsight": "检查产品在欧盟范围是否属高风险系统，立刻规划透明的日志与审计模块。",
+    "priority": "must-act"
+  },
+  {
+    "id": "a75eb11d-8590-4954-9825-6c7207b123cf",
+    "title": "中国内容标识新规",
+    "summary": "网信办要求所有生成内容强制添加隐形水印，实现全链路可追溯。",
+    "category": "行业政策",
+    "source": "网信中国公众号",
+    "pushedAt": "2026-07-02T11:36:50.412Z",
+    "isNew": true,
+    "actionableInsight": "接入合规的隐水印技术方案，更新生成流水线，确保内容输出侧自动注入。",
+    "priority": "must-act"
+  },
+  {
+    "id": "06685598-2dbb-4dd4-8d03-1ac806c67618",
+    "title": "RAG 2.0 记忆架构",
+    "summary": "GraphRAG 与 Agentic Memory 深度融合，实现知识的持续学习与动态更新。",
+    "category": "技术架构",
+    "source": "arXiv 论文 2506.xxxxx",
+    "pushedAt": "2026-07-02T11:36:50.412Z",
+    "isNew": true,
+    "actionableInsight": "重新审视产品知识库架构，将静态检索升级为图谱记忆，提升长对话连贯性。",
+    "priority": "focus"
+  },
+  {
+    "id": "0d3ac92f-1d84-4978-b696-80ff3abd957a",
+    "title": "Salesforce 语言驱动 CRM",
+    "summary": "Salesforce 发布 Einstein GPT Actions，用自然语言直接操控 CRM 对象与流程。",
+    "category": "应用案例",
+    "source": "Salesforce Newsroom",
+    "pushedAt": "2026-07-02T11:36:50.412Z",
+    "isNew": true,
+    "actionableInsight": "分析其语言驱动业务操作体验，挖掘自身产品中可替代表单与点击的会话式指令。",
+    "priority": "focus"
+  },
+  {
+    "id": "seed-k001",
+    "title": "Claude Opus 4.8 发布",
+    "summary": "Anthropic 发布 Opus 4.8，推理能力大幅提升，支持更复杂的多步 Agent 任务",
+    "category": "大模型",
+    "source": "Anthropic Blog",
+    "pushedAt": "2026-07-01T01:00:00.000Z",
+    "isNew": false,
+    "actionableInsight": "评估在你的产品中将模型升级到 Opus 4.8 对复杂推理任务的影响，特别是在 Agent 编排场景",
+    "priority": "must-act"
+  },
+  {
+    "id": "seed-k002",
+    "title": "多模态交互新范式",
+    "summary": "语音+视觉+文本融合的下一代 AI 产品交互设计成为主流",
+    "category": "产品设计",
+    "source": "a16z",
+    "pushedAt": "2026-07-01T01:00:00.000Z",
+    "isNew": false,
+    "actionableInsight": "梳理你的产品中哪些场景可以引入多模态交互降低用户使用门槛，优先做语音+文本的混合输入",
+    "priority": "focus"
+  },
+  {
+    "id": "seed-k003",
+    "title": "AI 价值定价取代 Token 计费",
+    "summary": "头部 AI 产品从按 token 计费转向按业务成果定价，客户接受度提升",
+    "category": "商业化",
+    "source": "The Information",
+    "pushedAt": "2026-07-01T01:00:00.000Z",
+    "isNew": false,
+    "actionableInsight": "重新评估你的产品定价模型，设计一个基于 ROI 的价值量化框架用于客户沟通",
+    "priority": "focus"
+  },
+  {
+    "id": "seed-k004",
+    "title": "MCP 协议成为 Agent 互联标准",
+    "summary": "Anthropic 的 MCP 协议被广泛采用，成为 AI Agent 间通信的事实标准",
+    "category": "技术架构",
+    "source": "Anthropic",
+    "pushedAt": "2026-07-01T01:00:00.000Z",
+    "isNew": false,
+    "actionableInsight": "检查你的产品架构是否支持 MCP 协议，考虑构建 MCP Server 连接更多工具和数据源",
+    "priority": "must-act"
+  },
+  {
+    "id": "seed-k005",
+    "title": "欧盟 AI 法案全面实施",
+    "summary": "EU AI Act 所有条款正式生效，高风险 AI 系统需提供完整合规文档",
+    "category": "行业政策",
+    "source": "EU Commission",
+    "pushedAt": "2026-07-01T01:00:00.000Z",
+    "isNew": false,
+    "actionableInsight": "立即梳理产品的 AI 风险等级，如有欧盟用户，尽快启动合规评估流程",
+    "priority": "must-act"
+  },
+  {
+    "id": "seed-k006",
+    "title": "开源 Llama 4 生态爆发",
+    "summary": "Meta 开源 Llama 4 后，社区涌现大量微调模型和工具，企业采用加速",
+    "category": "开源工具",
+    "source": "Meta AI",
+    "pushedAt": "2026-07-01T01:00:00.000Z",
+    "isNew": false,
+    "actionableInsight": "对比 Llama 4 与当前使用的模型在成本/性能上的差异，考虑在非核心场景用开源模型降本",
+    "priority": "focus"
+  },
+  {
+    "id": "seed-k007",
+    "title": "Cursor 用户突破 500 万",
+    "summary": "AI 编程工具 Cursor 用户量快速增长，AI 辅助开发成为 PM 必备认知",
+    "category": "应用案例",
+    "source": "Cursor Blog",
+    "pushedAt": "2026-07-01T01:00:00.000Z",
+    "isNew": false,
+    "actionableInsight": "作为 AI PM 应亲身体验各类 AI 开发工具，理解 AI 如何改变产品研发流程和团队效率",
+    "priority": "aware"
+  }
+]

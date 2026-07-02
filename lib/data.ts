@@ -1,18 +1,21 @@
 import 'server-only';
 import { v4 as uuid } from 'uuid';
-import type { Interview, Profile } from './types';
+import type { Interview, Profile, KnowledgeConcept } from './types';
 import interviewsData from '@/data/interviews.json';
 import profileData from '@/data/profile.json';
+import knowledgeFeedData from '@/data/knowledge-feed.json';
 import fs from 'fs';
 import path from 'path';
 
 const DATA_DIR = path.join(process.cwd(), 'data');
 const INTERVIEWS_PATH = path.join(DATA_DIR, 'interviews.json');
 const PROFILE_PATH = path.join(DATA_DIR, 'profile.json');
+const KNOWLEDGE_PATH = path.join(DATA_DIR, 'knowledge-feed.json');
 
 // In-memory cache — read once at module init, write through on change
 let interviews: Interview[] = [...interviewsData] as Interview[];
 let profile: Profile = { ...profileData } as Profile;
+let knowledgeFeed: KnowledgeConcept[] = [...knowledgeFeedData] as KnowledgeConcept[];
 
 function persistInterviews(): void {
   fs.writeFileSync(INTERVIEWS_PATH, JSON.stringify(interviews, null, 2), 'utf-8');
@@ -91,4 +94,37 @@ export function searchInterviews(keyword: string): Interview[] {
         )
     )
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+}
+
+// ---- Knowledge Feed ----
+
+function persistKnowledge(): void {
+  fs.writeFileSync(KNOWLEDGE_PATH, JSON.stringify(knowledgeFeed, null, 2), 'utf-8');
+}
+
+export function getKnowledgeFeed(): KnowledgeConcept[] {
+  return [...knowledgeFeed].sort(
+    (a, b) => new Date(b.pushedAt).getTime() - new Date(a.pushedAt).getTime()
+  );
+}
+
+export function getNewKnowledgeCount(): number {
+  return knowledgeFeed.filter((c) => c.isNew).length;
+}
+
+export function markKnowledgeAsRead(): void {
+  let changed = false;
+  for (const c of knowledgeFeed) {
+    if (c.isNew) {
+      c.isNew = false;
+      changed = true;
+    }
+  }
+  if (changed) persistKnowledge();
+}
+
+export function replaceKnowledgeFeed(concepts: KnowledgeConcept[]): KnowledgeConcept[] {
+  knowledgeFeed = concepts;
+  persistKnowledge();
+  return knowledgeFeed;
 }
